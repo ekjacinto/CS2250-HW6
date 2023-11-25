@@ -24,7 +24,7 @@ const App = () => {
           <Routes>
             <Route path="/tic-tac-toe" element={<TicTacToe />} />
             <Route path="/api-consumption" element={<Api />} />
-            <Route path="/" element={<HomePage />} />
+            <Route path="/CS2250-HW6/" element={<HomePage />} />
           </Routes>
         </article>
       </div>
