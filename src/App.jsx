@@ -8,7 +8,7 @@ import './css/App.css';
 const App = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    navigate("/CS2250-HW6/");
+    navigate("/");
   }, [navigate]);
 
   return (
@@ -16,7 +16,7 @@ const App = () => {
       <div>
         <nav>
           <div className="name">Ethan Jacinto</div>
-          <Link to="/CS2250-HW6/">Home Page</Link>
+          <Link to="/">Home Page</Link>
           <Link to="/tic-tac-toe">Tic Tac Toe</Link>
           <Link to="/api-consumption">API Consumption</Link>
         </nav>
@@ -24,7 +24,7 @@ const App = () => {
           <Routes>
             <Route path="/tic-tac-toe" element={<TicTacToe />} />
             <Route path="/api-consumption" element={<Api />} />
-            <Route path="/CS2250-HW6/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
         </article>
       </div>
