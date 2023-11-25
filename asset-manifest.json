@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/CS2250-HW6/static/css/main.3316c4e6.css",
-    "main.js": "/CS2250-HW6/static/js/main.bdea425c.js",
+    "main.js": "/CS2250-HW6/static/js/main.23ece0f0.js",
     "static/media/tesla.jpg": "/CS2250-HW6/static/media/tesla.4a79449b677c8114aced.jpg",
     "static/media/bg3.jpg": "/CS2250-HW6/static/media/bg3.ff014c34f6082ce892a9.jpg",
     "static/media/jjks2.jpg": "/CS2250-HW6/static/media/jjks2.f370637baa601f89760c.jpg",
     "index.html": "/CS2250-HW6/index.html",
     "main.3316c4e6.css.map": "/CS2250-HW6/static/css/main.3316c4e6.css.map",
-    "main.bdea425c.js.map": "/CS2250-HW6/static/js/main.bdea425c.js.map"
+    "main.23ece0f0.js.map": "/CS2250-HW6/static/js/main.23ece0f0.js.map"
   },
   "entrypoints": [
     "static/css/main.3316c4e6.css",
-    "static/js/main.bdea425c.js"
+    "static/js/main.23ece0f0.js"
   ]
 }
