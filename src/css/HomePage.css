@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container :not(.content-container img) {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.intro h1 {
+  font-size: 30px;
+}
+
+.intro img {
+  border-radius: 10px;
+  border: black dashed 5px;
+}
+
+.content-container h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.personal-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 250px;
+}
+
+.personal-lists > div {
+  width: 100%;
+}
+
+.fun-facts h2 {
+  font-family: "Pacifico";
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.fun-facts h3 {
+  font-size: 26px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.title-box {
+  color: white;
+  background-color: #333333;
+  border: 3.5px hidden black;
+  box-shadow: 6px 6px 2px 1px black;
+  text-shadow: 1px 3px 2px black;
+  height: 30px auto;
+  margin-bottom: 25px;
+}
+
+.fun-facts li {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.personal-lists img {
+  position: relative;
+  width: 300px;
+  height: 445px;
+  border-radius: 20px;
+  border: black double 5px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .personal-lists {
+    grid-template-columns: 1fr;
+  }
+}

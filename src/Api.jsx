@@ -1,39 +1,24 @@
 import React, { useState, useEffect } from 'react';
+import './css/Api.css'
 
 const Api = () => {
-    const [data, setData] = useState([]);
-    const [dataLoaded, isDataLoaded] = useState(false);
-    const url = `https://www.dnd5eapi.co/api/classes/${type}`;
+    const [images, setImages] = useState([]);
+    
     useEffect(() => {
+        const url = `https://shibe.online/api/shibes?count=[1-100]&urls=true&httpsUrls=true`;
         fetch(url)
-            .then((response) => response.json())
+            .then((res) => res.json())
             .then((json) => {
-                setItems(json.results);
-                setIsDataLoaded(true);
-            })
+                setImages(json);
+            });
     }, []);
-
-    if (!isDataLoaded) {
-        return (
-            <div>
-                <h1>D&D Class Information is loading...</h1>
-            </div>
-        );
-    }
 
     return (
         <div className="Api">
-            <h1>
-                Fetch data from an API in react
-            </h1>
-            {items.map((item) => {
-                <ul key={item.index}>
-                    <li>
-                        Class: {item.name}
-                    </li>
-                </ul>
-            })}
+            <h1>Fetch data from the Shiba Inu API Page</h1>
+            {images.length > 0  && <img src={images[0]} alt={"Shiba"} width="750" height="750" />}
         </div>
     )
 };
+
 export default Api;

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-family: "Pacifico";
+  font-size: 30px;
+  letter-spacing: 0px;
+}
+
+nav a,
+.name {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 0px;
+}
+
+nav a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22.5px;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+.component-container {
+  padding-bottom: 10px;
+}
