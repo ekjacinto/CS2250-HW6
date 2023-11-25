@@ -12,7 +12,7 @@ const App = () => {
   }, [navigate]);
 
   return (
-    <Router>
+    <Router basename="/CS2250-HW6/">
       <div>
         <nav>
           <div className="name">Ethan Jacinto</div>
