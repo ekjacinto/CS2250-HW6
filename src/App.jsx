@@ -6,17 +6,12 @@ import Api from './Api';
 import './css/App.css';
 
 const App = () => {
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate("/CS2250-HW6/");
-  }, [navigate]);
-
   return (
-    <Router basename="/CS2250-HW6/">
+    <Router>
       <div>
         <nav>
           <div className="name">Ethan Jacinto</div>
-          <Link to="/CS2250-HW6/">Home Page</Link>
+          <Link to="/CS2250-HW6">Home Page</Link>
           <Link to="/tic-tac-toe">Tic Tac Toe</Link>
           <Link to="/api-consumption">API Consumption</Link>
         </nav>
@@ -24,7 +19,7 @@ const App = () => {
           <Routes>
             <Route path="/tic-tac-toe" element={<TicTacToe />} />
             <Route path="/api-consumption" element={<Api />} />
-            <Route path="/CS2250-HW6/" element={<HomePage />} />
+            <Route path="/CS2250-HW6" element={<HomePage />} />
           </Routes>
         </article>
       </div>
